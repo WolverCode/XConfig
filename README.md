@@ -16,7 +16,7 @@ The following program attempts to read a string message stored in the configurat
     using XConfig;
     class Program
     {
-      ConfigManager configManager;
+      static ConfigManager configManager;
       public static void Main()
       {
         configManager = new ConfigManager("config.bin", new BSerializer(), true); //Use BSerializer for Binary Serialization 
